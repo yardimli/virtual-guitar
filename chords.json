@@ -1,0 +1,153 @@
+{
+  "MajorChords": [
+    {
+      "Chord": "C",
+      "Strings": ["E2", "C3", "E3", "G3", "C4", "E4"]
+    },
+    {
+      "Chord": "C#",
+      "Strings": ["F2", "C#3", "F3", "G#3", "C#4", "F4"]
+    },
+    {
+      "Chord": "D",
+      "Strings": ["A2", "D3", "A3", "D4", "F#4", "A4"]
+    },
+    {
+      "Chord": "D#",
+      "Strings": ["B2", "D#3", "A#3", "D#4", "G4", "B4"]
+    },
+    {
+      "Chord": "E",
+      "Strings": ["E2", "B2", "E3", "G#3", "B3", "E4"]
+    },
+    {
+      "Chord": "F",
+      "Strings": ["F2", "C3", "F3", "A3", "C4", "F4"]
+    },
+    {
+      "Chord": "F#",
+      "Strings": ["F#2", "C#3", "F#3", "A#3", "C#4", "F#4"]
+    },
+    {
+      "Chord": "G",
+      "Strings": ["G2", "D3", "G3", "B3", "D4", "G4"]
+    },
+    {
+      "Chord": "G#",
+      "Strings": ["G#2", "D#3", "G#3", "C4", "D#4", "G#4"]
+    },
+    {
+      "Chord": "A",
+      "Strings": ["E2", "A2", "E3", "A3", "C#4", "E4"]
+    },
+    {
+      "Chord": "A#",
+      "Strings": ["F2", "A#2", "F3", "A#3", "D4", "F4"]
+    },
+    {
+      "Chord": "B",
+      "Strings": ["F#2", "B2", "F#3", "B3", "D#4", "F#4"]
+    }
+  ],
+  "MinorChords": [
+    {
+      "Chord": "Cm",
+      "Strings": ["G2", "C3", "G3", "C4", "D#4", "G4"]
+    },
+    {
+      "Chord": "C#m",
+      "Strings": ["G#2", "C#3", "G#3", "C#4", "E4", "G#4"]
+    },
+    {
+      "Chord": "Dm",
+      "Strings": ["A2", "D3", "A3", "D4", "F4", "A4"]
+    },
+    {
+      "Chord": "D#m",
+      "Strings": ["A#2", "D#3", "A#3", "D#4", "F#4", "A#4"]
+    },
+    {
+      "Chord": "Em",
+      "Strings": ["E2", "B2", "E3", "G3", "B3", "E4"]
+    },
+    {
+      "Chord": "Fm",
+      "Strings": ["F2", "C3", "F3", "G#3", "C4", "F4"]
+    },
+    {
+      "Chord": "F#m",
+      "Strings": ["F#2", "C#3", "F#3", "A3", "C#4", "F#4"]
+    },
+    {
+      "Chord": "Gm",
+      "Strings": ["G2", "D3", "G3", "A#3", "D4", "G4"]
+    },
+    {
+      "Chord": "G#m",
+      "Strings": ["G#2", "D#3", "G#3", "B3", "D#4", "G#4"]
+    },
+    {
+      "Chord": "Am",
+      "Strings": ["E2", "A2", "E3", "A3", "C4", "E4"]
+    },
+    {
+      "Chord": "A#m",
+      "Strings": ["F2", "A#2", "F3", "A#3", "C#4", "F4"]
+    },
+    {
+      "Chord": "Bm",
+      "Strings": ["F#2", "B2", "F#3", "A3", "B3", "F#4"]
+    }
+  ],
+  "DominantSeventhChords": [
+    {
+      "Chord": "C7",
+      "Strings": ["E2", "C3", "G3", "A#3", "E4", "G4"]
+    },
+    {
+      "Chord": "C#7",
+      "Strings": ["G#2", "C#3", "G#3", "B3", "F4", "G#4"]
+    },
+    {
+      "Chord": "D7",
+      "Strings": ["A2", "D3", "A3", "C4", "F#4", "A4"]
+    },
+    {
+      "Chord": "D#7",
+      "Strings": ["A#2", "D#3", "A#3", "C#4", "G4", "A#4"]
+    },
+    {
+      "Chord": "E7",
+      "Strings": ["E2", "B2", "E3", "D4", "B3", "E4"]
+    },
+    {
+      "Chord": "F7",
+      "Strings": ["F2", "C3", "F3", "D#4", "C4", "F4"]
+    },
+    {
+      "Chord": "F#7",
+      "Strings": ["F#2", "C#3", "F#3", "E4", "C#4", "F#4"]
+    },
+    {
+      "Chord": "G7",
+      "Strings": ["G2", "D3", "G3", "F4", "D4", "G4"]
+    },
+    {
+      "Chord": "G#7",
+      "Strings": ["G#2", "D#3", "G#3", "F#4", "D#4", "G#4"]
+    },
+    {
+      "Chord": "A7",
+      "Strings": ["E2", "A2", "E3", "G3", "C#4", "E4"]
+    },
+    {
+      "Chord": "A#7",
+      "Strings": ["F2", "A#2", "F3", "G#3", "D4", "F4"]
+    },
+    {
+      "Chord": "B7",
+      "Strings": ["F#2", "B2", "F#3", "A3", "D#4", "F#4"]
+    }
+  ]
+}
+

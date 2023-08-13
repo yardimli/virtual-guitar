@@ -4,7 +4,7 @@ let guitarStrings = [
 ];
 let instrument_name = 'acoustic_guitar_steel';
 
-let thick_top = true;
+let thick_top = false;
 let dark_theme = false;
 
 let guitarStringStartPositions = [
@@ -71,6 +71,10 @@ function refreshFretboard() {
 	$('#fret_board').removeClass('fret_board_light_thick_bottom');
 	$('#fret_board').removeClass('fret_board_dark_thick_bottom');
 	
+	$("#major-selector").val('');
+	$("#minor-selector").val('');
+	$("#d7-selector").val('');
+	
 	var guitarStringsToUse = guitarStrings;
 	if (thick_top) {
 		$('#fret_board').addClass(dark_theme ? 'fret_board_dark_thick_top' : 'fret_board_light_thick_top');
@@ -85,7 +89,7 @@ function refreshFretboard() {
 		$("#fret_board").append("<div style='white-space: nowrap; position: absolute; top:" + guitarStringStartPositions[row_counter].y + "px; left:" + guitarStringStartPositions[row_counter].x + "px;' id='row_" + row_counter + "'></div>");
 		
 		let fret_btn_mute = "<div class='form-check form-switch' style='position: absolute; left:0px; top:" + guitarStringStartPositions[row_counter].y + "px;'>" +
-			"<input class='form-check-input fret_mute_btn' data-row_id='" + row_counter + "'  checked type='checkbox' role='switch' style='width:30px; height: 30px;'></div>";
+			"<input class='form-check-input fret_mute_btn' data-row_id='" + row_counter + "'  checked type='checkbox' role='switch' style='width:30px; height: 30px;' id='mute_row_" + row_counter + "'></div>";
 		$("#row_" + row_counter).append(fret_btn_mute);
 		
 		
@@ -205,6 +209,25 @@ $(document).ready(function () {
 		})
 		.catch(error => console.error(error)); // handle error if any
 	
+	var allButtons = Array.from(document.getElementsByClassName("chord_btn"));
+	
+	fetch('chords.json')
+		.then(response => response.json())
+		.then(data => {
+			var allData = [...data.MajorChords, ...data.MinorChords, ...data.DominantSeventhChords];
+			
+			allData.forEach(item => {
+				// find the button that corresponds to this chord
+				var correspondingButton = allButtons.find(button => button.textContent === item.Chord);
+				
+				// if a corresponding button was found, add the data-strings attribute to it
+				if (correspondingButton) {
+					correspondingButton.setAttribute('data-strings', item.Strings.join(','));
+				}
+			});
+		})
+		.catch(error => console.error(error)); // handle error if any
+	
 	
 	MIDI.loadPlugin({
 		soundfontUrl: "./soundfont/MusyngKite/",
@@ -224,6 +247,31 @@ $(document).ready(function () {
 		let tuning = $(this).val();
 		guitarStrings = tuning.split(' ');
 		refreshFretboard();
+	});
+	
+	$(".chord_btn").on('click',function () {
+		let chord = $(this).data('strings');
+		let chordStrings = chord.split(',');
+		console.log(chordStrings);
+		
+		if (!thick_top) {
+			chordStrings = chordStrings.reverse();
+		}
+		
+		for (let i = 0; i < chordStrings.length; i++) {
+			
+			$("#mute_row_" + i).prop('checked', false);
+			$('#row_' + i).find('.activeBtn').removeClass('activeBtn');
+			$('#row_' + i).find('.fret_btn').each(function () {
+				if ($(this).data('fret') === chordStrings[i]) {
+					$("#mute_row_" + i).prop('checked', true);
+					$(this).addClass('activeBtn');
+				}
+			});
+		}
+		
+		strum('up');
+		
 	});
 	
 	$("#instrument-selector").on('change', function () {
