@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.activeBtn {
+    background: #007CBA !important;
+    opacity: 1 !important;
+}
+
+.activeBtn:hover {
+    background: #007CBA;
+    opacity: 1 !important;
+}
+
+.fret_btn {
+    border-radius: 50px;
+    opacity: 0.7;
+    background-color: #AAACBA;
+    font-family: 'Roboto','Helvetica Neue','Helvetica','Arial',sans-serif;
+}
+.fret_btn:hover {
+    opacity: 1;
+}
+
+.fret_board_light_thick_top {
+    background-image: url('../images/fret-light-small-flip.png');
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 4151px;
+    position: relative;
+}
+
+.fret_board_dark_thick_top {
+    background-image: url('../images/fret-dark-small-flip.png');
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 4151px;
+    position: relative;
+}
+
+.fret_board_light_thick_bottom {
+    background-image: url('../images/fret-light-small.png');
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 4151px;
+    position: relative;
+}
+
+.fret_board_dark_thick_bottom {
+    background-image: url('../images/fret-dark-small.png');
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 4151px;
+    position: relative;
+}
+
+.custom-switch .custom-control-label::before {
+    width: 50px !important;
+}
+
+.muted {
+    opacity: 0.2 !important;
+}

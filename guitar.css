@@ -1,0 +1,335 @@
+/*! CSS Used from: https://react-guitar.com/_next/static/css/4c6019a32704c28a.css */
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+:after,
+:before {
+    --tw-content: "";
+}
+sub {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+input {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    margin: 0;
+}
+fieldset,
+legend {
+    padding: 0;
+}
+input::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+:disabled {
+    cursor: default;
+}
+*,
+:after,
+:before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+.inline-block {
+    display: inline-block;
+}
+.max-w-full {
+    max-width: 100%;
+}
+.transform-gpu {
+    transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0)
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.shadow {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+}
+.shadow {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+@media (min-width: 640px) {
+    .sm\:rounded {
+        border-radius: 0.25rem;
+    }
+}
+/*! CSS Used from: Embedded */
+.css-11bgka2 {
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-y: auto;
+    border-top-color: #333333;
+    border-top-style: solid;
+    border-top-width: 0.5em;
+    overscroll-behavior-x: none;
+    background: #333333;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.css-11bgka2 *,
+.css-11bgka2 *::before,
+.css-11bgka2 *::after {
+    box-sizing: border-box;
+}
+.css-11bgka2 .frets {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+.css-11bgka2 .frets .fret {
+    width: 10em;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+}
+.css-11bgka2 .frets .fret.nut,
+.css-11bgka2 .frets .fret.mute {
+    width: 7em;
+}
+.css-11bgka2 .frets .fret.mute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.css-11bgka2 .frame {
+    height: 2em;
+}
+.css-11bgka2 .frame .counter {
+    font-weight: bold;
+    color: #606c76;
+}
+.css-11bgka2 .frame .fret {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: #333333;
+}
+.css-11bgka2 .strings {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    min-height: 9.993749999999999em;
+}
+.css-11bgka2 .strings .string {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.css-11bgka2 .strings .string .fret {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.css-11bgka2 .strings .string .fret .actual-string {
+    -webkit-transition: opacity ease-in-out 0.1s;
+    transition: opacity ease-in-out 0.1s;
+    content: "";
+    width: 100%;
+    height: 0.65em;
+    position: absolute;
+    left: 0;
+}
+.css-11bgka2 .strings .string .fret label {
+    font-size: 1em;
+    width: 100%;
+    height: 3.33125em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+}
+.css-11bgka2
+.strings
+.string
+.fret:hover
+input:not(:disabled):not(:checked)
+~ .finger {
+    opacity: 0.5;
+}
+.css-11bgka2 .strings .string .fret input:not(:disabled) {
+    height: 100%;
+    width: 100%;
+}
+.css-11bgka2 .strings .string .fret input:not(:disabled),
+.css-11bgka2 .strings .string .fret input:not(:disabled) ~ .finger {
+    cursor: pointer;
+}
+.css-11bgka2 .strings .string .fret input {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+}
+.css-11bgka2 .strings .string .fret input:checked ~ .finger {
+    opacity: 1;
+}
+.css-11bgka2 .strings .string .fret input:focus:not(:disabled) ~ .finger {
+    box-shadow: 0 0 0 0.2em rgba(66, 153, 225, 0.5);
+}
+.css-11bgka2 .strings .string .fret.mute input:checked ~ .finger {
+    opacity: 0;
+}
+.css-11bgka2 .strings .string .fret.mute input:focus ~ .finger,
+.css-11bgka2 .strings .string .fret.mute:hover input:checked ~ .finger {
+    opacity: 0.5;
+}
+.css-11bgka2 .fretboard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.css-11bgka2 .fretboard .fret {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: end;
+    justify-content: end;
+    background-color: #9e6429;
+}
+.css-11bgka2 .fretboard .fret.nut {
+    background-color: #fffacd;
+}
+.css-11bgka2 .fretboard .fret:not(.nut)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.3em;
+    background-color: #daa520;
+    border-right: solid 0.15em hsl(42.89999999999998, 74.4%, 44.1%);
+    border-radius: 0;
+    display: inline-block;
+}
+.css-11bgka2 .finger {
+    color: #606c76;
+    -webkit-transition: opacity ease-in-out 0.1s;
+    transition: opacity ease-in-out 0.1s;
+    background: white;
+    width: 5em;
+    padding: 0;
+    height: 2.3333333333333335em;
+    border-radius: 20px;
+    border-bottom: solid 0.2em hsl(0, 0%, 65%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+    font-weight: bold;
+    opacity: 0;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+}
+.css-11bgka2 .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
