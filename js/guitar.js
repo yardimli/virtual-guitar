@@ -169,7 +169,7 @@ function strum(direction) {
 					btn.click();
 				}, delayTime);
 				
-				delayTime += 50; // Increase delay time after each loop iteration
+				delayTime += 25; // Increase delay time after each loop iteration
 			}
 		}
 	} else if (direction === 'up') {
